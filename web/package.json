@@ -2,9 +2,6 @@
   "name": "web",
   "version": "1.0.0-dev",
   "private": true,
-  "workspaces": [
-    "lib/opal"
-  ],
   "scripts": {
     "dev": "next dev",
     "dev:profile": "NEXT_PUBLIC_ENABLE_STATS=true next dev",
