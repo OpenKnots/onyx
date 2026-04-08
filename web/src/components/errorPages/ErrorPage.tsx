@@ -14,12 +14,14 @@ export default function Error() {
       </div>
 
       <Text as="p" text03>
-        It seems there was a problem loading your Onyx settings. This could be
-        due to a configuration issue or incomplete setup.
+        We were unable to load your Onyx settings. This may be caused by an
+        incomplete configuration or a temporary connectivity issue.
       </Text>
 
       <Text as="p" text03>
-        If you&apos;re an admin, please review our{" "}
+        <strong>For administrators:</strong> Please verify that all required
+        environment variables are set and that backend services are running
+        correctly. Our{" "}
         <a
           className="text-action-link-05"
           href={`${DOCS_BASE_URL}?utm_source=app&utm_medium=error_page&utm_campaign=config_error`}
@@ -28,12 +30,16 @@ export default function Error() {
         >
           documentation
         </a>{" "}
-        for proper configuration steps. If you&apos;re a user, please contact
-        your admin for assistance.
+        provides detailed configuration and troubleshooting guidance.
       </Text>
 
       <Text as="p" text03>
-        Need help? Join our{" "}
+        <strong>For users:</strong> Please reach out to your system
+        administrator, as they can help resolve this issue.
+      </Text>
+
+      <Text as="p" text03>
+        Still need assistance? Our{" "}
         <a
           className="text-action-link-05"
           href="https://discord.gg/4NA5SbzrWb"
@@ -42,7 +48,7 @@ export default function Error() {
         >
           Discord community
         </a>{" "}
-        for support.
+        is available to help with any questions or concerns.
       </Text>
     </ErrorPageLayout>
   );

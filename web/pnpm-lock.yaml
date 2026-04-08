@@ -364,6 +364,8 @@ importers:
         specifier: ^3.6.20
         version: 3.6.20
 
+  lib/opal: {}
+
 packages:
 
   '@adobe/css-tools@4.4.4':
